@@ -1,0 +1,33 @@
+{
+  "name": "@mubarrat/css-builder",
+  "version": "1.0.0",
+  "description": "The CSS Builder tool is designed to streamline the creation of CSS stylesheets, primarily in JavaScript. It provides an intuitive interface for generating CSS code effortlessly.",
+  "scripts": {
+    "build": "tsc && node prependComment.js && terser ./dist/css-builder.js --comments all -o ./dist/css-builder.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mubarrat/css-builder.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "js",
+    "ts",
+    "javascript-library",
+    "css-builder"
+  ],
+  "author": "Mubarrat Hasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mubarrat/css-builder/issues"
+  },
+  "homepage": "https://github.com/Mubarrat/css-builder#readme",
+  "devDependencies": {
+    "terser": "^5.26.0",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "@mubarrat:registry": "https://npm.pkg.github.com/"
+  }
+}
